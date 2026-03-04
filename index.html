@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+   
+    <title>fe25-js2-slutprojekt-front-zarak</title>
+  </head>
+ <body>
+  <h1>Scrum Board</h1>
+
+  <h2>Add Member</h2>
+  <input id="memberName" placeholder="Name" />
+  <select id="memberCategory">
+    <option value="ux">UX</option>
+    <option value="dev frontend">Dev Frontend</option>
+    <option value="dev backend">Dev Backend</option>
+  </select>
+  <button type="button" id="addMemberBtn">Add Member</button>
+
+  <h2>Add Task</h2>
+  <input id="taskTitle" placeholder="Title" />
+  <input id="taskDescription" placeholder="Description" />
+  <select id="taskCategory">
+    <option value="ux">UX</option>
+    <option value="dev frontend">Dev Frontend</option>
+    <option value="dev backend">Dev Backend</option>
+  </select>
+  <button type="button" id="addTaskBtn">Add Task</button>
+
+  <hr />
+<!-- <div id="board"></div> -->
+  <div id="board" style="display:flex; gap:20px;">
+    <div>
+      <h2>NEW</h2>
+      <div id="new"></div>
+    </div>
+
+    <div>
+      <h2>DOING</h2>
+      <div id="doing"></div>
+    </div>
+
+    <div>
+      <h2>DONE</h2>
+      <div id="done"></div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
